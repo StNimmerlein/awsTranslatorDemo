@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2636d88-97c9-4cd8-85f7-5a2849b1eca2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../infrastructure/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../infrastructure/.npmignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../infrastructure/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../infrastructure/bin/infrastructure.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../infrastructure/cdk.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../infrastructure/infrastructure.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../infrastructure/jest.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../infrastructure/lib/infrastructure-stack.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../infrastructure/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../infrastructure/test/infrastructure.test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../infrastructure/tsconfig.json" afterDir="false" />
-    </list>
+    <list default="true" id="b2636d88-97c9-4cd8-85f7-5a2849b1eca2" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,10 +43,15 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1TKczu3oEbOyBO8Vo0gUSGxEiL2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../infrastructure" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -78,6 +71,29 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="npm.Angular CLI Server (frontend)">
+    <configuration name="E2E Tests (frontend)" type="JavaScriptTestRunnerProtractor">
+      <config-file value="$PROJECT_DIR$/../frontend/e2e/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular Application (frontend)" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server (frontend)" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/../frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -89,7 +105,7 @@
       <option name="presentableId" value="Default" />
       <updated>1573212492285</updated>
       <workItem from="1573212493760" duration="17380000" />
-      <workItem from="1573334177830" duration="393000" />
+      <workItem from="1573334177830" duration="4443000" />
     </task>
     <servers />
   </component>
