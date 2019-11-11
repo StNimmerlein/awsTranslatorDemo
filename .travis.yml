@@ -1,0 +1,33 @@
+language: node_js
+node_js:
+  - '12'
+sudo: required
+
+branches:
+  only:
+    - master
+
+script:
+  - sudo apt update
+  - sudo apt install openjdk-8-jdk -y
+  - cd lambda
+  - ./gradlew shadowJar
+  - cd ../infrastructure
+  - npm run build
+  - npm install -g aws-cdk
+#  - cdk synth
+#  - export AWS_DEFAULT_REGION=eu-central-1
+
+notifications:
+  email:
+    recipients:
+      - mail@stnimmerlein.de
+    on_success: change
+    on_failure: always
+
+before_install:
+  - echo -e "Host stnimmerlein.de\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+  - openssl aes-256-cbc -K $encrypted_d4824022e3f9_key -iv $encrypted_d4824022e3f9_iv -in id_rsa.enc -out id_rsa -d
+  - eval "$(ssh-agent -s)"
+  - chmod 400 ./deploy-key
+  - ssh-add ./deploy-key
