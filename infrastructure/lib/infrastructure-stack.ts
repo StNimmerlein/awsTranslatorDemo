@@ -5,7 +5,7 @@ import s3 = require('@aws-cdk/aws-s3');
 import apigw = require('@aws-cdk/aws-apigateway');
 import path = require('path');
 import { Runtime } from '@aws-cdk/aws-lambda';
-import { Duration } from '@aws-cdk/core';
+import { CfnOutput, Duration } from '@aws-cdk/core';
 import { PassthroughBehavior } from '@aws-cdk/aws-apigateway';
 
 export class InfrastructureStack extends cdk.Stack {
@@ -37,7 +37,10 @@ export class InfrastructureStack extends cdk.Stack {
       }
     });
 
-    let api = new apigw.RestApi(this, 'translateApi');
+    let api = new apigw.RestApi(this, 'translateApi', {
+      deploy: true
+    });
+
     const langResource = api.root.addResource('{language}');
     let getIntegration = new apigw.LambdaIntegration(translateLambda, {
       proxy: false,
@@ -70,6 +73,10 @@ export class InfrastructureStack extends cdk.Stack {
           'method.response.header.Access-Control-Allow-Methods': true
         }
       }]
+    });
+
+    new CfnOutput(this, 'ApiOutput', {
+      value: api.url
     });
   }
 }
