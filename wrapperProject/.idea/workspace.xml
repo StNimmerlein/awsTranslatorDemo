@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2636d88-97c9-4cd8-85f7-5a2849b1eca2" name="Default Changelist" comment="Add npm i and gradle build">
-      <change beforePath="$PROJECT_DIR$/../lambda/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../lambda/.gitignore" afterDir="false" />
+    <list default="true" id="b2636d88-97c9-4cd8-85f7-5a2849b1eca2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../infrastructure/updateApiUrl.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/updateApiUrl.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,6 +66,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../frontend" />
       <recent name="$PROJECT_DIR$/../" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -124,7 +126,7 @@
       <updated>1573212492285</updated>
       <workItem from="1573212493760" duration="17380000" />
       <workItem from="1573334177830" duration="19122000" />
-      <workItem from="1573497975683" duration="2886000" />
+      <workItem from="1573497975683" duration="3622000" />
     </task>
     <task id="LOCAL-00001" summary="Use actual backend API">
       <created>1573497882003</created>
@@ -175,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573500615963</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add exception for gradle wrapper jar in gitignore and add jar to VC">
+      <created>1573500894860</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1573500894860</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +224,7 @@
     <MESSAGE value="Add Travis yml" />
     <MESSAGE value="Use correct key name" />
     <MESSAGE value="Add npm i and gradle build" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add npm i and gradle build" />
+    <MESSAGE value="Add exception for gradle wrapper jar in gitignore and add jar to VC" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add exception for gradle wrapper jar in gitignore and add jar to VC" />
   </component>
 </project>

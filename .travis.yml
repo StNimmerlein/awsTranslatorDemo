@@ -7,17 +7,25 @@ branches:
   only:
     - master
 
+env:
+  - DEPLOY_PATH="translator"
+
 script:
   - sudo apt update
-  - sudo apt install openjdk-8-jdk -y
+  - sudo apt install openjdk-8-jdk awscli -y
   - cd lambda
-  - ./gradlew build shadowJar
+  - ./gradlew build shadowJar --no-daemon
   - cd ../infrastructure
   - npm i
   - npm run build
   - npm install -g aws-cdk
-#  - cdk synth
-#  - export AWS_DEFAULT_REGION=eu-central-1
+  - cdk synth
+  - cdk deploy
+  - cd ../frontend
+  - ./updateApiUrl.sh
+  - ./node_modules/@angular/cli/bin/ng build --prod --base-href /$DEPLOY_PATH/
+  - ssh root@stnimmerlein.de "mkdir -p /var/www/html/$DEPLOY_PATH"
+  - scp -r dist/frontend/* root@stnimmerlein.de:/var/www/html/$DEPLOY_PATH
 
 notifications:
   email:
