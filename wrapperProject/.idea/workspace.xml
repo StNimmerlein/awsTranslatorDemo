@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b2636d88-97c9-4cd8-85f7-5a2849b1eca2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../infrastructure/updateApiUrl.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/updateApiUrl.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -126,7 +125,7 @@
       <updated>1573212492285</updated>
       <workItem from="1573212493760" duration="17380000" />
       <workItem from="1573334177830" duration="19122000" />
-      <workItem from="1573497975683" duration="3622000" />
+      <workItem from="1573497975683" duration="4129000" />
     </task>
     <task id="LOCAL-00001" summary="Use actual backend API">
       <created>1573497882003</created>
@@ -184,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573500894860</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add deployment">
+      <created>1573501628172</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1573501628172</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +231,7 @@
     <MESSAGE value="Use correct key name" />
     <MESSAGE value="Add npm i and gradle build" />
     <MESSAGE value="Add exception for gradle wrapper jar in gitignore and add jar to VC" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add exception for gradle wrapper jar in gitignore and add jar to VC" />
+    <MESSAGE value="Add deployment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add deployment" />
   </component>
 </project>
