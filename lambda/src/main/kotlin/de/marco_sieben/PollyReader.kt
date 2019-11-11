@@ -15,10 +15,10 @@ import java.util.*
 
 class PollyReader : TextReader {
 
-    val polly: AmazonPolly
-    val s3: AmazonS3
-    val bucketName: String = System.getenv("AUDIO_FILE_BUCKET_NAME")
-    val localeMap = mapOf(
+    private val polly: AmazonPolly
+    private val s3: AmazonS3
+    private val bucketName: String = System.getenv("AUDIO_FILE_BUCKET_NAME")
+    private val localeMap = mapOf(
             "de" to Pair("de-DE", "Marlene"),
             "arb" to Pair("arb", "Zeina"),
             "hi" to Pair("hi-IN", "Aditi"),
@@ -67,10 +67,15 @@ class PollyReader : TextReader {
 
     private fun storeInS3(stream: InputStream): URL {
         val key = "${UUID.randomUUID()}.mp3"
-        val date = Calendar.getInstance()
+        val expirationDate = createFutureDate(15)
 
-        s3.putObject(bucketName, key, stream, ObjectMetadata())
-        date.add(Calendar.MINUTE, 5)
-        return s3.generatePresignedUrl(bucketName, key, date.time)
+        s3.putObject(bucketName, key, stream, ObjectMetadata().apply { expirationTime = expirationDate })
+        return s3.generatePresignedUrl(bucketName, key, expirationDate)
+    }
+
+    private fun createFutureDate(minutesInTheFuture: Int): Date? {
+        val expirationCalendar = Calendar.getInstance()
+        expirationCalendar.add(Calendar.MINUTE, minutesInTheFuture)
+        return expirationCalendar.time
     }
 }

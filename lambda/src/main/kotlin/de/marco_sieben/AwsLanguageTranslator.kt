@@ -9,7 +9,7 @@ import com.amazonaws.services.translate.model.TranslateTextRequest
 
 class AwsLanguageTranslator : TextTranslator {
 
-    val translater: AmazonTranslate
+    private val translater: AmazonTranslate
 
     constructor() {
         val credentialsProvider = DefaultAWSCredentialsProviderChain.getInstance()
