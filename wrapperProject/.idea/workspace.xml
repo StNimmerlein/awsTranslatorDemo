@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2636d88-97c9-4cd8-85f7-5a2849b1eca2" name="Default Changelist" comment="" />
+    <list default="true" id="b2636d88-97c9-4cd8-85f7-5a2849b1eca2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../frontend/src/environments/environment.prod.template.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/environments/environment.prod.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lambda/src/main/kotlin/de/marco_sieben/AwsLanguageTranslator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../lambda/src/main/kotlin/de/marco_sieben/AwsLanguageTranslator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lambda/src/main/kotlin/de/marco_sieben/PollyReader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../lambda/src/main/kotlin/de/marco_sieben/PollyReader.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +48,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../infrastructure" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
@@ -47,10 +58,11 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../infrastructure" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../frontend/src/environments" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.protractor.protractor_package" value="$PROJECT_DIR$/../frontend/node_modules/protractor" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -58,6 +70,11 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.TypeScript" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/../infrastructure/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../frontend/src/environments" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -71,16 +88,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.Angular CLI Server (frontend)">
+  <component name="RunManager" selected="JavaScript Debug.Angular Application (frontend)">
     <configuration name="E2E Tests (frontend)" type="JavaScriptTestRunnerProtractor">
       <config-file value="$PROJECT_DIR$/../frontend/e2e/protractor.conf.js" />
       <node-interpreter value="project" />
+      <protractor-package value="$PROJECT_DIR$/../frontend/node_modules/protractor" />
       <protractor-options value="" />
       <envs />
       <scope-kind value="ALL" />
       <method v="2" />
     </configuration>
-    <configuration name="Angular Application (frontend)" type="JavascriptDebugType" uri="http://localhost:4200">
+    <configuration name="Angular Application (frontend)" type="JavascriptDebugType" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:4200" useFirstLineBreakpoints="true">
       <method v="2" />
     </configuration>
     <configuration name="Angular CLI Server (frontend)" type="js.build_tools.npm">
@@ -93,6 +111,11 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.Angular Application (frontend)" />
+      <item itemvalue="npm.Angular CLI Server (frontend)" />
+      <item itemvalue="Protractor.E2E Tests (frontend)" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -105,7 +128,7 @@
       <option name="presentableId" value="Default" />
       <updated>1573212492285</updated>
       <workItem from="1573212493760" duration="17380000" />
-      <workItem from="1573334177830" duration="4443000" />
+      <workItem from="1573334177830" duration="18884000" />
     </task>
     <servers />
   </component>

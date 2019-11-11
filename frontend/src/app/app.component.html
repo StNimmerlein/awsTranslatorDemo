@@ -16,19 +16,25 @@
       </div>
       <div class="d-inline-block flex-grow-1">
         <select class="form-control" [(ngModel)]="targetLanguage">
-          <option value="de">German</option>
-          <option value="en">English</option>
-          <option value="fr">French</option>
-          <option value="es">Spanish</option>
+          <option *ngFor="let language of supportedLanguages" [value]="language.code">{{language.name}}</option>
         </select>
       </div>
-      <button class="btn btn-primary translate-button" (click)="translate()">Translate</button>
+      <button class="btn btn-primary translate-button"
+              (click)="translate()"
+              [disabled]="!sourceText">
+        Translate
+      </button>
     </div>
     <div class="col-md-4 mb-2">
       <div class="translation">
         {{ translatedText }}
       </div>
-      <button class="btn btn-secondary float-right">Play again</button>
+      <button class="btn btn-secondary float-right"
+              [hidden]="!audioUrl"
+              (click)="playAudio()"
+              [disabled]="!audio.ended">
+        Play again
+      </button>
     </div>
   </div>
 </div>
