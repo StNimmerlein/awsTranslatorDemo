@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2636d88-97c9-4cd8-85f7-5a2849b1eca2" name="Default Changelist" comment="Output API Url">
-      <change afterPath="$PROJECT_DIR$/../.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b2636d88-97c9-4cd8-85f7-5a2849b1eca2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../.travis.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -124,7 +123,7 @@
       <updated>1573212492285</updated>
       <workItem from="1573212493760" duration="17380000" />
       <workItem from="1573334177830" duration="19122000" />
-      <workItem from="1573497975683" duration="2199000" />
+      <workItem from="1573497975683" duration="2377000" />
     </task>
     <task id="LOCAL-00001" summary="Use actual backend API">
       <created>1573497882003</created>
@@ -154,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573498097133</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add Travis yml">
+      <created>1573500216878</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1573500216878</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +197,7 @@
     <MESSAGE value="Make properties private" />
     <MESSAGE value="Enable CORS" />
     <MESSAGE value="Output API Url" />
-    <option name="LAST_COMMIT_MESSAGE" value="Output API Url" />
+    <MESSAGE value="Add Travis yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Travis yml" />
   </component>
 </project>
