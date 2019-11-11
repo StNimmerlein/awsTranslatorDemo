@@ -11,8 +11,9 @@ script:
   - sudo apt update
   - sudo apt install openjdk-8-jdk -y
   - cd lambda
-  - ./gradlew shadowJar
+  - ./gradlew build shadowJar
   - cd ../infrastructure
+  - npm i
   - npm run build
   - npm install -g aws-cdk
 #  - cdk synth
